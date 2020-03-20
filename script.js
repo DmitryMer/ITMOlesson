@@ -1,2 +1,2 @@
-console.log('Base work!!!');
-console.log('Fix work');
+console.log('Hello from git');
+
