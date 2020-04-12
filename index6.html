@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Это сайт о велосипедах">
+	<meta name="keywords" content="Велосипеды продажа магазин">
+	<title>Интернет-магазин велосипедов</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+	<ul class="main__menu">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="index2.html">В наличии</a></li>
+		<li><a href="index3.html">О нас</a></li>
+		<li><a href="index4.html">Авторизация</a></li>
+		<li><a href="index5.html">Регистрация</a></li>
+		<li style="background: linear-gradient(to top, rgba(36,0,0,1) 0%, #007C21 40%, #00BF32 100%);"><a href="index6.html">Вопросы</a></li>
+		<li><a href="index7.html">Статьи</a></li>
+		<li><a href="index_grid.html">BMX</a></li>
+	</ul>
+
+	<div class="autorization num_6">
+
+		<form> 
+			<fieldset>
+				<legend>Задать вопрос</legend>
+				<img src="Img/man.png" width="100" height="100">
+			<div>
+				<h3>Укажите ваше имя</h3>
+				<input type="text" placeholder="Назовите себя" required min="3" max="15">
+			</div>
+
+			<div>
+				<h3>Укажите ваш возраст</h3>
+	
+				<select required style="color: gray">
+					<option>До 16 лет</option>
+					<option>От 16 до 30</option>
+					<option>От 30 до 60</option>
+					<option>От 60 и выше</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Укажите ваш пол</h3>
+				<input type="radio" id="a" name="a"><label for="a">Мужской</label>
+				<input type="radio" id="b" name="a"><label for="b">Женский</label>
+			</div>
+
+			<div>
+				<h3>Контакты обратной связиx</h3>
+				<input type="text" placeholder="Email или телефон">
+			</div>
+
+			<div>
+				<h3>Текст вопроса</h3>
+				<textarea rows="10" cols="50" placeholder="Ваш вопрос" required></textarea>
+			</div>
+
+			<div>
+				<input type="submit" value="Отправить запрос" id="question">
+			</div>	
+
+			</fieldset>
+
+		</form>
+	</div>
+
+</body>
+</html>

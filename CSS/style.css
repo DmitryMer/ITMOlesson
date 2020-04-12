@@ -1,0 +1,240 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../Img/background-image.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	font-family: 'Roboto', sans-serif;
+
+	color: #fff;	
+}
+
+a {
+	color: #FFEB00;
+}
+
+ul li {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+ul li a, legend {
+	color: #fff;
+	text-decoration: none;
+}
+
+input[type=submit] {
+	background-color: #c71829; 
+	color: #fff;
+	border-radius: 10px;
+
+	font-size: 16px;
+}
+
+.history {
+	text-align: center;
+}
+
+.btn__history {
+	background-color: #c71829; 
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	border: 1px solid silver;
+
+	padding: 5px;
+}
+
+.main__menu {
+	display: block;
+	text-align: center;
+}
+
+.main__menu li {
+	padding: 3px 4px;
+	background: #240000;
+    background: linear-gradient(to top, #240000 0%, #a16161 40%, rgba(255,0,0,1) 100%);
+    border: 1px solid #240000;
+    border-radius: 3px;
+}
+
+.main__menu li:hover {
+	padding: 3px 4px;
+	background: #240000;
+    background: linear-gradient(to top, #240000 0%, #BF3030 40%, #A60000 100%);
+    border: 1px solid #240000;
+    border-radius: 3px;
+}
+
+.autorization {
+	text-align: center;
+}
+
+.autorization fieldset {
+	width: 45%;
+	margin: 0 auto;
+}
+
+.autorization legend {
+	margin: 0 auto;
+}
+
+.autorization__form {
+	display: flex;
+	justify-content: center;
+}
+
+.autorization__form div {
+	margin: 0 20px 20px;
+}
+
+.num_5 .btn {
+	margin-top: 20px;
+}
+
+.col-6 > img {
+	margin: 50px 0 0 20px;
+	box-shadow: 0 0 20px silver;
+}
+
+.col-6.title {
+	text-align: center;
+}
+
+/*слайд*/
+
+.wrapper {
+	height: 350px;
+	margin: 50px auto 50px;
+	position: relative;
+	width: 700px;
+}
+
+.slider {
+	background-color: #ddd;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+
+.slide1 { 
+	position: relative;
+	background-image: url(https://cdn.pixabay.com/photo/2013/03/27/12/29/bmx-97090_960_720.jpg);
+	background-size: cover; 
+	background-position: center;
+}
+
+.slide2 { 
+	background-image: url(https://cdn.pixabay.com/photo/2016/02/18/00/40/bmx-1206367_960_720.jpg); 
+	background-size: cover;
+}
+.slide3 { 
+	background-image: url(https://cdn.pixabay.com/photo/2013/03/27/12/30/bmx-97093_960_720.jpg); 
+	background-size: cover;
+}
+
+
+.slide__text {
+	position: absolute;
+	left: 400px;
+	color: #000;
+}
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	border-radius: 50%;
+}
+
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	border-radius: 50%;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	border-radius: 50%;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	background: #ddd;
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
+}
+
+.sale__menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.sale__menu li {
+	padding: 3px 4px;
+	background: #240000;
+    background: linear-gradient(to top, #240000 0%, #a16161 40%, rgba(255,0,0,1) 100%);
+    border: 1px solid #240000;
+    border-radius: 3px;
+
+    margin-bottom: 10px;
+    width: 200px;
+}
