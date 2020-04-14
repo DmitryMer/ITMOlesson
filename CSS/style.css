@@ -63,7 +63,8 @@ input[type=submit] {
     border-radius: 3px;
 }
 
-.main__menu li:hover {
+.main__menu li:hover,
+.sub__menu li:hover  {
 	padding: 3px 4px;
 	background: #240000;
     background: linear-gradient(to top, #240000 0%, #BF3030 40%, #A60000 100%);
@@ -226,15 +227,110 @@ input[type=submit] {
 .sale__menu {
 	display: flex;
 	flex-direction: column;
+	width: 400px;
 }
 
 .sale__menu li {
+	position: relative;
+
 	padding: 3px 4px;
 	background: #240000;
     background: linear-gradient(to top, #240000 0%, #a16161 40%, rgba(255,0,0,1) 100%);
     border: 1px solid #240000;
     border-radius: 3px;
 
+    margin-left: 40px;
     margin-bottom: 10px;
     width: 200px;
+}
+
+.sub__menu {
+	display: none;
+}
+
+.sale__menu > li:hover .sub__menu {
+	display: block;
+	position: absolute;
+	top: 25px;
+}
+
+.sale {
+	width: 400px;
+	margin-top: 150px;
+	text-align: center;
+}
+
+.hover:target {
+	display: none;
+}
+
+.form {
+	display: none;
+	border: 1px solid #c71829;
+	border-radius: 10px;
+	z-index: 10;
+}
+
+.form:target {
+	display: block;
+	position: fixed;
+	top: 250px;
+	bottom: 150px;
+	right: 30%;
+	left: 30%;
+	background-color: silver;
+}
+
+.form h2 {
+	margin-top: 50px;
+	color: #333;
+}
+
+.sale__form  {
+	display: flex;
+	position: relative;
+}
+
+.sale__form div {
+	margin: 0 auto;
+}
+
+.sale__form input  {
+	width: 250px;
+	height: 40px;
+}
+
+.close {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	width: 32px;
+	height: 32px;
+	opacity: 0.5;
+}
+
+.close:hover {
+	opacity: 1;
+}
+
+.close:before, .close:after {
+	position: absolute;
+	left: 25px;
+	top: 10px;
+	content: ' ';
+	height: 33px;
+	width: 2px;
+	background-color: #000;
+}
+
+.close:before {
+	transform: rotate(45deg);
+}
+
+.close:after {
+	transform: rotate(-45deg);
+}
+
+.sale__submit {
+	margin-top: 20px;
 }
