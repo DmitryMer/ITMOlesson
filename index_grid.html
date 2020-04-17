@@ -77,12 +77,11 @@
 						</li>
 					</ul><!-- sale__menu -->
 
-					<div class="sale">
-						<h3>Успейте воспользоваться нашей акцией</h3>
-						<a href="#form"><img src="Img/sale.png" alt="sale" width="200" height="200"></a>
-						<div id="form" class="form">
-							<h2>Отправьте ваши данные</h2>
-							<form>
+					<!-- модальное окно -->
+					<div class="modal__view">
+						<div id="zatemnenie">
+     						<form class="modal"> 
+								<h3>Укажите ваши данные</h3>
 								<div class="sale__form">
 									<div>
 										<input type="text" placeholder="Ваше имя" required>
@@ -91,15 +90,20 @@
 										<input type="email" placeholder="Ваш email" required>
 									</div>
 								</div>
-								<a href="#"><span class="close"></span></a>
-								<input type="submit" value="Отправить данные" class="sale__submit">
+									<a href="#"><span class="close"></span></a>
+									<input type="submit" value="Отправить данные" class="sale__submit">
 							</form>		
-						</div>
-					</div>
+   						</div>
+     					<a href="#zatemnenie" class="modal__link">
+     						<h3>Успейте воспользоваться нашей акцией</h3>
+     						<img src="Img/sale.png" alt="sale" width="200" height="200">
+     					</a>
+     				</div><!-- modal__viw -->
 
 				</div>
 			</div><!-- row -->
 		</div><!-- col-4 -->
 	</div><!-- row -->
+
 </body>
 </html>
